@@ -1,0 +1,18 @@
+entity Book {
+	name String required,
+    genre String
+}
+
+entity Author {
+	name String required
+}
+
+relationship OneToMany {
+	Author{book} to Book
+}
+
+// Set pagination options
+paginate Book with pagination
+
+// Set service options to all except few
+service all with serviceImpl

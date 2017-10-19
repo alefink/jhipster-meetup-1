@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "author",
+            "otherEntityName": "author",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "genre",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171012093725",
+    "entityTableName": "book",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl"
+}
